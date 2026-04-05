@@ -1,0 +1,7 @@
+{
+  "name": "The North Shore Coding Club",
+  "description": "A community of builders, thinkers, and explorers on the shores of Duluth, MN. Forging the future of local tech through collaboration and mentorship.",
+  "requestFramePermissions": [
+    "geolocation"
+  ]
+}

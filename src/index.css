@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&family=Inter:wght@400;500;600&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-headline: "Manrope", sans-serif;
+
+  --color-primary: #003e69;
+  --color-primary-container: #00568e;
+  --color-secondary: #4c616c;
+  --color-tertiary: #7e000c;
+  --color-surface: #f4faff;
+  --color-surface-low: #e9f6fd;
+  --color-surface-highest: #d7e4ec;
+  --color-on-surface: #111d23;
+  --color-on-surface-variant: #424751;
+  --color-outline-variant: #c2c6d3;
+
+  --radius-xl: 1.5rem;
+}
+
+@layer base {
+  body {
+    @apply bg-surface text-on-surface font-sans antialiased;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-headline tracking-tight;
+  }
+}
+
+.nautical-gradient {
+  background: linear-gradient(135deg, #003e69 0%, #00568e 100%);
+}
+
+.glass-panel {
+  @apply bg-white/80 backdrop-blur-xl;
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.scrollbar-hide {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
